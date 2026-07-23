@@ -24,3 +24,8 @@ wrangler.jsonc
 *.njsproj
 *.sln
 *.sw?
+
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
