@@ -16,6 +16,7 @@ npm run lint     # oxlint
 - **Build command:** `npm run build`
 - **Output directory:** `dist`
 - Dashboard auto-detects Vite; or use `npx wrangler pages deploy dist/`
+- **Do NOT add `wrangler.toml`** — it overrides Pages auto-detection and breaks the build
 - Bind custom domain in Cloudflare Pages dashboard → your domain
 
 ## Architecture
