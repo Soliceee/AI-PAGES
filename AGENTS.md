@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Personal homepage built with Vite + React, deployed on Cloudflare Pages.
+Star particle effect site built with Vite + React + tsParticles, deployed on Cloudflare Pages.
 
 ## Commands
 
@@ -21,13 +21,13 @@ npm run lint     # oxlint
 
 ## Architecture
 
-- Terminal-styled single-page UI: type commands (`about`, `banner`, `whoami`, `date`, `help`, `clear`) for content
-- Main component in `src/Terminal.jsx` — edit command outputs, ASCII banner, and social links there
-- Blue-purple terminal theme with `:root` CSS custom properties in `src/App.css`
-- No routing library — all interaction is command-based
+- Full-screen star particle effect using tsParticles
+- Static stars (no movement) with random colors fill the screen
+- Mouse hover generates trail stars that fade out
+- All configuration in `src/StarBackground.jsx`
 
 ## Notes
 
-- Update ASCII banner in `src/Terminal.jsx` (the `BANNER` const)
-- Update GitHub/social link in `src/Terminal.jsx` (the `aboutText` const)
-- To add new commands, add a `case` in the `processCommand` switch statement
+- Edit particle config in `src/StarBackground.jsx` (`options` object)
+- Background color set to `#0a0a14` in the same file
+- `src/Terminal.jsx` is unused legacy code

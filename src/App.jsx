@@ -1,7 +1,7 @@
-import Terminal from './Terminal'
+import StarBackground from './StarBackground'
 
 function App() {
-  return <Terminal />
+  return <StarBackground />
 }
 
 export default App
