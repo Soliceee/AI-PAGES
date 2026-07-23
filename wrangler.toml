@@ -1,0 +1,4 @@
+name = "my-page"
+pages_build_output_dir = "dist"
+
+compatibility_date = "2025-07-23"
