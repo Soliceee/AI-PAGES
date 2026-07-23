@@ -21,13 +21,13 @@ npm run lint     # oxlint
 
 ## Architecture
 
-- Single-page layout: Hero → About → Projects → Contact
-- CSS custom properties with `prefers-color-scheme` dark mode
-- All content in `src/App.jsx` — edit arrays (`skills`, `projects`, `socialLinks`) for personalization
-- Sticky nav with smooth scroll (hash links on same page)
+- Terminal-styled single-page UI: type commands (`about`, `banner`, `whoami`, `date`, `help`, `clear`) for content
+- Main component in `src/Terminal.jsx` — edit command outputs, ASCII banner, and social links there
+- Blue-purple terminal theme with `:root` CSS custom properties in `src/App.css`
+- No routing library — all interaction is command-based
 
 ## Notes
 
-- No routing library — sections use anchor IDs
-- `public/_redirects` serves all paths via index.html (for future SPA routing)
-- Update `index.html` title, `public/favicon.svg`, and social links for your brand
+- Update ASCII banner in `src/Terminal.jsx` (the `BANNER` const)
+- Update GitHub/social link in `src/Terminal.jsx` (the `aboutText` const)
+- To add new commands, add a `case` in the `processCommand` switch statement
