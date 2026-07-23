@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Star particle effect site built with Vite + React + tsParticles, deployed on Cloudflare Pages.
+Star particle effect site built with Vite + canvas-nest.js, deployed on Cloudflare Pages.
 
 ## Commands
 
@@ -21,13 +21,11 @@ npm run lint     # oxlint
 
 ## Architecture
 
-- Full-screen star particle effect using tsParticles
-- Static stars (no movement) with random colors fill the screen
-- Mouse hover generates trail stars that fade out
-- All configuration in `src/StarBackground.jsx`
+- Full-screen interactive particle nest effect using canvas-nest.js
+- White particles connect with lines when near each other; mouse attracts nearby particles
+- All configuration in `src/App.jsx`
 
 ## Notes
 
-- Edit particle config in `src/StarBackground.jsx` (`options` object)
-- Background color set to `#0a0a14` in the same file
-- `src/Terminal.jsx` is unused legacy code
+- Edit particle config in `src/App.jsx`: `color`, `pointColor`, `opacity`, `count`, `zIndex`
+- Background color set via inline style on the container div
