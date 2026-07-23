@@ -9,11 +9,9 @@ function App() {
       color: '255,255,255',
       pointColor: '255,255,255',
       opacity: 0.5,
-      count: 150,
+      count: 120,
       zIndex: 0,
     })
-    cn.points.forEach(p => { p.max = 25000 })
-    cn.current.max = 80000
     return () => cn.destroy()
   }, [])
 
